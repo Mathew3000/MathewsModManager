@@ -1,9 +1,9 @@
 # MathewsModManager
-A simple Mod Manager for Factorio
+<br>A simple Mod Manager for Factorio</br>
 
-#Features
--Activate a special Modpack
--Share and Import Modpacks
--Create Modpacks from all installed Mods
--Automatically create a new Modpack from already installed Mods
--Rename your Modpacks (what a Feature!!)
+<h2>Features</h2>
+<br>-Activate a special Modpack</br>
+<br>-Share and Import Modpacks</br>
+<br>-Create Modpacks from all installed Mods</br>
+<br>-Automatically create a new Modpack from already installed Mods</br>
+<br>-Rename your Modpacks (what a Feature!!)</br>
