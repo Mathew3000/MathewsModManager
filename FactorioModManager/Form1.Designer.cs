@@ -89,6 +89,7 @@
             this.lb_modAll.FormattingEnabled = true;
             this.lb_modAll.Location = new System.Drawing.Point(6, 16);
             this.lb_modAll.Name = "lb_modAll";
+            this.lb_modAll.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lb_modAll.Size = new System.Drawing.Size(238, 147);
             this.lb_modAll.TabIndex = 0;
             this.lb_modAll.SelectedIndexChanged += new System.EventHandler(this.lb_modAll_SelectedIndexChanged);
@@ -108,6 +109,7 @@
             this.lb_modContains.FormattingEnabled = true;
             this.lb_modContains.Location = new System.Drawing.Point(6, 16);
             this.lb_modContains.Name = "lb_modContains";
+            this.lb_modContains.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lb_modContains.Size = new System.Drawing.Size(238, 147);
             this.lb_modContains.TabIndex = 0;
             // 

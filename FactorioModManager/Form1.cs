@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -338,11 +339,17 @@ namespace FactorioModManager
 
         private void bt_removeMod_Click(object sender, EventArgs e)
         {
-            string mod;
+            List<string> modsToRemove = new List<string>();
+            foreach(string mod in lb_modContains.SelectedItems)
+            {
+                modsToRemove.Add(mod);
+            }
             try
             {
-                mod = (string)lb_modContains.Items[lb_modContains.SelectedIndex];
-                removeMod(mod);
+                foreach (string mod in modsToRemove)
+                {
+                    removeMod(mod);
+                }
             }
             catch (ArgumentOutOfRangeException)
             {
@@ -357,15 +364,17 @@ namespace FactorioModManager
 
         private void bt_addMod_Click(object sender, EventArgs e)
         {
-            string mod;
             string modPack;
-            mod = (string)lb_modAll.Items[lb_modAll.SelectedIndex];
+            modPack = (string)lb_modPack.Items[lb_modPack.SelectedIndex];
             try
             {
-                modPack = (string)lb_modPack.Items[lb_modPack.SelectedIndex];
-                addMod(mod, modPack);
+                foreach (string mod in lb_modAll.SelectedItems)
+                {
+                    
+                    addMod(mod, modPack);
+                }
             }
-            catch
+            catch (ArgumentOutOfRangeException)
             {
                 MessageBox.Show("Please select a Modpack", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
