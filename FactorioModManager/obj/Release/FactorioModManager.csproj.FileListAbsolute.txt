@@ -15,3 +15,11 @@ C:\Users\Matthias\Documents\Visual Studio 2015\Projects\FactorioModManager\Mathe
 C:\Users\Matthias\Documents\Visual Studio 2015\Projects\FactorioModManager\MathewsModManager\FactorioModManager\obj\Release\FactorioModManager.FactorioModManagerMain.resources
 C:\Users\Matthias\Documents\Visual Studio 2015\Projects\FactorioModManager\MathewsModManager\FactorioModManager\obj\Release\FactorioModManager.Properties.Resources.resources
 C:\Users\Matthias\Documents\Visual Studio 2015\Projects\FactorioModManager\MathewsModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.GenerateResource.Cache
+C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MathewsModManager\FactorioModManager\bin\Release\MathewsModManager.exe.config
+C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MathewsModManager\FactorioModManager\obj\Release\MathewsModManager.exe
+C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MathewsModManager\FactorioModManager\obj\Release\MathewsModManager.pdb
+C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MathewsModManager\FactorioModManager\bin\Release\MathewsModManager.exe
+C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MathewsModManager\FactorioModManager\bin\Release\MathewsModManager.pdb
+C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MathewsModManager\FactorioModManager\obj\Release\FactorioModManager.FactorioModManagerMain.resources
+C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MathewsModManager\FactorioModManager\obj\Release\FactorioModManager.Properties.Resources.resources
+C:\Users\Matthias\Documents\Visual Studio 2015\Projects\MathewsModManager\FactorioModManager\obj\Release\FactorioModManager.csproj.GenerateResource.Cache

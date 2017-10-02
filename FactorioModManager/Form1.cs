@@ -294,6 +294,10 @@ namespace FactorioModManager
                 {
                     MessageBox.Show("Could not find Factorio AppData folder!", "Folder not found!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                else
+                {
+                    MessageBox.Show(ex.Message, "Exception");
+                }
             }
         }
 
@@ -340,7 +344,7 @@ namespace FactorioModManager
                 mod = (string)lb_modContains.Items[lb_modContains.SelectedIndex];
                 removeMod(mod);
             }
-            catch
+            catch (ArgumentOutOfRangeException)
             {
                 MessageBox.Show("Please select a valid Mod", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
@@ -479,7 +483,7 @@ namespace FactorioModManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Could not activate selected Mod Pack!", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Could not activate selected Mod Pack! \n\r Exception: " + ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             refresh();
         }
@@ -528,7 +532,7 @@ namespace FactorioModManager
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Could not delete Pack!", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Could not delete Pack! \r\n Exception: " + ex.Message, "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             refresh();
         }
@@ -570,9 +574,17 @@ namespace FactorioModManager
                 modPackPath = l_modPacks.Find(x => x.Contains(modPack));
                 Directory.Move(modPackPath, DIR_MODPACKS + "\\" + tb_newName.Text);
             }
-            catch
+            catch (IndexOutOfRangeException)
             {
                 MessageBox.Show("Please select a mod pack", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            catch (IOException)
+            {
+                MessageBox.Show("Could not rename Modpack! IOError", "IOError", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Could not find Modpack!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             refresh();
         }
